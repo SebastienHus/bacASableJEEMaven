@@ -42,6 +42,15 @@
 		
 		<%-- equivalent d un sysout en taglit --%>
 		<c:out value="<p> je suis un paragraphe.</p>" escapeXml="false" />
+		
+		<ul>
+		<c:forEach items="${bookList}" var ="book">
+		
+			<li><c:out value="${book.author}"></c:out></li>
+			
+		</c:forEach>
+		</ul>
+		
 	
 	</body>
 	
